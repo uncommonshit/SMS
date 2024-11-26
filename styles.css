@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  padding: 15px 30px;
+}
+
+.header .logo {
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navbar .nav-list {
+  list-style: none;
+}
+
+.navbar .nav-list li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.navbar .nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 15px;
+}
+
+.navbar .nav-list a:hover {
+  background-color: #87CEEB;
+}
+
+.hamburger {
+  display: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.breadcrumb p {
+  font-size: 16px;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.search {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.search-btn {
+  padding: 10px 15px;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #87CEEB;
+}
+
+.list ul {
+  list-style: none;
+}
+
+.list ul li {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+.footer {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+@media (max-width: 576px) {
+  .navbar .nav-list {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    background-color: #003366;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .search input {
+    width: calc(100% - 100px);
+  }
+
+  .search-btn {
+    width: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar .nav-list {
+    display: block;
+  }
+
+  .navbar .nav-list li {
+    display: inline-block;
+  }
+}
